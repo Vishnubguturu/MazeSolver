@@ -18,15 +18,30 @@ class Square {
 		this.isWall = isWall;
 	}
 	
-	public int getRow() { return this.row; }
-	public int getCol() { return this.col; }
-	public boolean getIsWall() { return this.isWall; }
-	public boolean isVisited() { return this.visited; }
-	public Square getPrevious() { return this.previous;	}
+	public int getRow() { 
+		return this.row; 
+	}
+	
+	public int getCol() { 
+		return this.col; 
+	}
+	
+	public boolean getIsWall() { 
+		return this.isWall; 
+	}
+	
+	public boolean isVisited() { 
+		return this.visited; 
+	}
+	
+	public Square getPrevious() { 
+		return this.previous;	
+	}
 	
 	public void visit() {
 		this.visited = true;
 	}
+	
 	public void setPrevious(Square previous) {
 		this.previous = previous;
 	}
